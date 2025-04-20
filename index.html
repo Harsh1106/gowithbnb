@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <meta name="description" content="A performance optimized Airbnb clone with 50+ properties">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="assets/fonts/circular-subset.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <h3>gowithbnb</h3>
+            </a>
+            <nav class="main-nav">
+                <a href="#listings">Listings</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#blog">Blog</a>
+                <a href="#host">Become a Host</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Find your perfect getaway</h1>
+                <p>Discover entire homes and private rooms perfect for any trip</p>
+                <form class="search-form">
+                    <input type="text" placeholder="Where are you going?" aria-label="Search destination">
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="listings" class="listings">
+            <div class="container">
+                <h2>Featured Listings</h2>
+                <div class="filter-options">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Apartments</button>
+                    <button class="filter-btn">Houses</button>
+                    <button class="filter-btn">Cabins</button>
+                    <button class="filter-btn">Beachfront</button>
+                </div>
+                <div class="property-grid" id="propertyGrid">
+                    <!-- Properties will be loaded via JavaScript -->
+                </div>
+                <div class="load-more">
+                    <button id="loadMoreBtn" class="btn">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="experiences">
+            <div class="container">
+                <h2>Unique Experiences</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="sprite cooking-icon"></div>
+                        <h3>Cooking Classes</h3>
+                        <p>Learn from local chefs in their homes</p>
+                        <a href="#cooking" class="experience-link">Explore</a>
+                    </div>
+                    <div class="experience-card">
+                        <div class="sprite hiking-icon"></div>
+                        <h3>Hiking Tours</h3>
+                        <p>Discover hidden trails with locals</p>
+                        <a href="#hiking" class="experience-link">Explore</a>
+                    </div>
+                    <div class="experience-card">
+                        <div class="sprite art-icon"></div>
+                        <h3>Art Workshops</h3>
+                        <p>Create with local artists</p>
+                        <a href="#art" class="experience-link">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#help">Help Center</a>
+                    <a href="#safety">Safety information</a>
+                    <a href="#cancellation">Cancellation options</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <a href="#disaster">Disaster relief</a>
+                    <a href="#support">Support refugees</a>
+                    <a href="#combat">Combating discrimination</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Hosting</h4>
+                    <a href="#try-hosting">Try hosting</a>
+                    <a href="#protection">AirCover for Hosts</a>
+                    <a href="#resources">Hosting resources</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Airbnb Clone, Inc. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
